@@ -1,6 +1,6 @@
 <template>
 	<b-container>
-		<b-row>
+		<!-- <b-row>
 			<b-col md="4">
 				<b-card title="Number of emails sent">
 					<center>
@@ -64,22 +64,26 @@
 					</p>
 				</b-card>
 			</b-col>
-		</b-row>
+		</b-row> -->
 		<b-row>
 			<b-col md="12">
-				<b-card :header="selected">
+				<b-card header="Email Tasks">
 					<table class="table table-hover">
 						<thead>
 							<tr>
 								<th>Task Subject</th>
-								<th>Completed Status</th>
+								<th>Status</th>
+								<th>Mails sent</th>
+								<th>Last sent</th>
 								<th>Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>Test proposal</td>
-								<td>30%</td>
+								<td>Running</td>
+								<td>3/50</td>
+								<td>00:00 12th April, 2018</td>
 								<td>
 									<b-btn variant="danger">Stop</b-btn>
 								</td>
